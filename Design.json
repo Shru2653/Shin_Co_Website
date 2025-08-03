@@ -1,0 +1,238 @@
+{
+    "profileName": "The Shinnovation Co - Dual Focus Design System",
+    "description": "A modern, clean, and human-centric design system for a parent company with two distinct products. The core aesthetic balances professionalism and trust (for investors and developers) with a sense of calm and community (for users). It draws inspiration from the clarity of Stripe and the modern polish of Linear.",
+    "styleGuide": {
+        "colors": {
+            "description": "A neutral-heavy palette establishes a sophisticated and trustworthy base. Each product is assigned a unique, vibrant accent color for clear visual differentiation.",
+            "brand": {
+                "primary": {
+                    "value": "#111827",
+                    "description": "Charcoal Black - For primary headlines and core text."
+                },
+                "secondary": {
+                    "value": "#4B5563",
+                    "description": "Cool Gray - For sub-headlines and secondary text."
+                }
+            },
+            "neutrals": {
+                "background": {
+                    "value": "#FFFFFF",
+                    "description": "Pure White - For main page background to maximize readability."
+                },
+                "backgroundSubtle": {
+                    "value": "#F9FAFB",
+                    "description": "Off-White/Subtle Gray - For section backgrounds to create visual rhythm."
+                },
+                "border": {
+                    "value": "#E5E7EB",
+                    "description": "Light Gray - For subtle borders and dividers."
+                },
+                "borderHover": {
+                    "value": "#D1D5DB",
+                    "description": "Slightly darker gray for hover states on borders."
+                }
+            },
+            "accents": {
+                "projectM": {
+                    "value": "#2563EB",
+                    "description": "Vibrant Blue - Energetic and trustworthy. For Project-M CTAs, links, and highlights."
+                },
+                "projectR": {
+                    "value": "#14B8A6",
+                    "description": "Calming Teal - Soothing and positive. For Project-R CTAs, links, and highlights."
+                },
+                "unifiedCTA": {
+                    "value": "#111827",
+                    "description": "The primary brand color for unified, top-level CTAs."
+                }
+            },
+            "states": {
+                "success": {
+                    "value": "#10B981",
+                    "description": "For success messages and validation."
+                },
+                "error": {
+                    "value": "#EF4444",
+                    "description": "For error messages and alerts."
+                },
+                "warning": {
+                    "value": "#F59E0B",
+                    "description": "For warnings or informational callouts."
+                },
+                "disabled": {
+                    "value": "#9CA3AF",
+                    "description": "For disabled button backgrounds and text."
+                }
+            }
+        },
+        "typography": {
+            "description": "Uses 'Inter' for its excellent readability on screens. A clear typographic scale creates a strong hierarchy and guides the user's focus.",
+            "fontFamily": "'Inter', sans-serif",
+            "scale": {
+                "display": {
+                    "fontSize": "4.5rem",
+                    "fontWeight": 700,
+                    "lineHeight": "1.1",
+                    "letterSpacing": "-0.02em",
+                    "description": "For the main hero headline only."
+                },
+                "h1": {
+                    "fontSize": "3rem",
+                    "fontWeight": 700,
+                    "lineHeight": "1.2",
+                    "letterSpacing": "-0.02em",
+                    "description": "For primary section titles."
+                },
+                "h2": {
+                    "fontSize": "2.25rem",
+                    "fontWeight": 600,
+                    "lineHeight": "1.25",
+                    "letterSpacing": "-0.01em",
+                    "description": "For secondary section titles."
+                },
+                "h3": {
+                    "fontSize": "1.5rem",
+                    "fontWeight": 600,
+                    "lineHeight": "1.4",
+                    "description": "For card titles and key features."
+                },
+                "bodyLarge": {
+                    "fontSize": "1.125rem",
+                    "fontWeight": 400,
+                    "lineHeight": "1.6",
+                    "description": "For introductory paragraphs and important text."
+                },
+                "body": {
+                    "fontSize": "1rem",
+                    "fontWeight": 400,
+                    "lineHeight": "1.7",
+                    "description": "For all standard body copy."
+                },
+                "caption": {
+                    "fontSize": "0.875rem",
+                    "fontWeight": 400,
+                    "lineHeight": "1.5",
+                    "color": "colors.brand.secondary",
+                    "description": "For metadata, labels, and footnotes."
+                }
+            }
+        },
+        "spacing": {
+            "description": "A 4px base unit ensures consistent and rhythmic spacing across the entire layout. Use these tokens for all margins, paddings, and gaps.",
+            "baseUnit": "4px",
+            "scale": {
+                "xs": "4px",
+                "s": "8px",
+                "m": "16px",
+                "l": "24px",
+                "xl": "32px",
+                "xxl": "48px",
+                "xxxl": "64px"
+            }
+        },
+        "layout": {
+            "description": "A responsive grid system ensures a consistent and adaptable layout across all devices.",
+            "containerWidth": "1280px",
+            "gridColumns": 12,
+            "gutter": "24px",
+            "breakpoints": {
+                "sm": "640px",
+                "md": "768px",
+                "lg": "1024px",
+                "xl": "1280px"
+            }
+        },
+        "effects": {
+            "description": "Subtle effects to add depth and affordance without being distracting.",
+            "borderRadius": {
+                "standard": "8px",
+                "large": "16px",
+                "full": "9999px"
+            },
+            "boxShadow": {
+                "subtle": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+                "standard": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+                "lifted": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                "interactive": "0 0 0 3px rgba(66, 153, 225, 0.5)",
+                "description": "'interactive' is a focus ring style."
+            }
+        }
+    },
+    "componentLibrary": {
+        "description": "Defines the styles for reusable components to ensure a consistent user experience.",
+        "buttons": {
+            "description": "Buttons are designed to be clear in their intent and hierarchy.",
+            "baseStyle": {
+                "fontFamily": "typography.fontFamily",
+                "fontWeight": 500,
+                "borderRadius": "effects.borderRadius.standard",
+                "padding": "spacing.m spacing.xl",
+                "transition": "all 0.2s ease-in-out"
+            },
+            "primary": {
+                "description": "For the most important actions. Uses accent colors.",
+                "backgroundColor": "colors.accents.projectM or colors.accents.projectR",
+                "color": "colors.neutrals.background",
+                "hover": {
+                    "transform": "translateY(-2px)",
+                    "boxShadow": "effects.boxShadow.lifted"
+                }
+            },
+            "secondary": {
+                "description": "For secondary actions. Outlined style.",
+                "backgroundColor": "transparent",
+                "color": "colors.brand.primary",
+                "border": "1px solid colors.neutrals.border",
+                "hover": {
+                    "backgroundColor": "colors.neutrals.backgroundSubtle",
+                    "borderColor": "colors.neutrals.borderHover"
+                }
+            }
+        },
+        "cards": {
+            "description": "Used for showcasing products, features, or testimonials.",
+            "baseStyle": {
+                "backgroundColor": "colors.neutrals.background",
+                "borderRadius": "effects.borderRadius.large",
+                "boxShadow": "effects.boxShadow.standard",
+                "padding": "spacing.xl",
+                "overflow": "hidden",
+                "transition": "transform 0.3s ease, box-shadow 0.3s ease"
+            },
+            "hoverStyle": {
+                "transform": "scale(1.02)",
+                "boxShadow": "effects.boxShadow.lifted"
+            }
+        },
+        "inputFields": {
+            "description": "Clean and modern form inputs.",
+            "baseStyle": {
+                "backgroundColor": "colors.neutrals.background",
+                "borderRadius": "effects.borderRadius.standard",
+                "border": "1px solid colors.neutrals.border",
+                "padding": "spacing.m",
+                "fontSize": "typography.scale.body.fontSize"
+            },
+            "focusStyle": {
+                "borderColor": "colors.accents.projectM",
+                "boxShadow": "0 0 0 3px rgba(37, 99, 235, 0.3)"
+            }
+        }
+    },
+    "visualsAndMedia": {
+        "description": "Guidelines for non-component visuals to maintain brand consistency.",
+        "iconography": {
+            "style": "Outline",
+            "strokeWidth": 1.5,
+            "librarySuggestion": "Lucide Icons (lucide.dev) for its clean, modern, and comprehensive set."
+        },
+        "imagery": {
+            "style": "Authentic, high-quality, and human-centric photography.",
+            "description": "Avoid generic stock photos. For Project-M, show real people in community settings. For Project-R, use calm, introspective, and nature-inspired scenes. All photos should have a slightly warm, natural color grade."
+        },
+        "uiMockups": {
+            "style": "Clean and realistic device frames.",
+            "description": "Present product UIs inside high-fidelity, minimal device mockups (phones, laptops). Use subtle perspective and shadows to add depth. Do not show distracting or cluttered UIs; focus on a single, clear feature per mockup."
+        }
+    }
+}

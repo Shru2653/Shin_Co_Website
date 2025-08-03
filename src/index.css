@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        @apply text-brand-primary bg-neutral-background;
+    }
+}
+
+@layer components {
+
+    /* Custom button styles based on design system */
+    .btn-primary {
+        @apply bg-accent-project-m text-neutral-background font-medium px-m py-xl rounded-standard transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lifted focus:outline-none focus:ring-2 focus:ring-accent-project-m focus:ring-opacity-50;
+    }
+
+    .btn-primary-project-r {
+        @apply bg-accent-project-r text-neutral-background font-medium px-m py-xl rounded-standard transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lifted focus:outline-none focus:ring-2 focus:ring-accent-project-r focus:ring-opacity-50;
+    }
+
+    .btn-secondary {
+        @apply bg-transparent text-brand-primary border border-neutral-border font-medium px-m py-xl rounded-standard transition-all duration-200 ease-in-out hover:bg-neutral-background-subtle hover:border-neutral-border-hover focus:outline-none focus:ring-2 focus:ring-accent-project-m focus:ring-opacity-50;
+    }
+
+    .btn-unified {
+        @apply bg-accent-unified-cta text-neutral-background font-medium px-m py-xl rounded-standard transition-all duration-200 ease-in-out hover:-translate-y-0.5 hover:shadow-lifted focus:outline-none focus:ring-2 focus:ring-accent-project-m focus:ring-opacity-50;
+    }
+
+    /* Card styles */
+    .card {
+        @apply bg-neutral-background rounded-large shadow-standard p-xl overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lifted;
+    }
+
+    /* Input field styles */
+    .input-field {
+        @apply bg-neutral-background border border-neutral-border rounded-standard px-m py-m text-body w-full transition-all duration-200 ease-in-out focus:border-accent-project-m focus:outline-none focus:ring-2 focus:ring-accent-project-m focus:ring-opacity-30;
+    }
+}
